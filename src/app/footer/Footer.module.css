@@ -1,0 +1,30 @@
+.footer {
+    position: relative;
+    height: 60vh;
+    background-color: var(--gray);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.imageWrapper {
+    position: relative;
+    height: 20rem;
+    width: auto;
+    overflow: hidden;
+}
+
+.footerImage {
+    object-fit: contain;
+}
+
+.text{
+color: white;
+}
+
+.line{
+height: 2px;
+width: 100%;
+ background: linear-gradient(to right, #ececd6, #ff0, #726833);
+}

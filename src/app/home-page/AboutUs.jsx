@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './AboutUs.module.css';
+import Image from 'next/image';
 
 const AboutUs = () => {
   return (
@@ -12,11 +13,22 @@ const AboutUs = () => {
           At KVS Trust, we believe in spreading the joy of giving by providing support, shelter, and education to underprivileged children across the region.
         </p>
 <button
-          className={styles.knowButton}
+          className={styles.donate}
           aria-label="Learn more about KVS Trust"
         >
           Learn More 
         </button>
+<div className={styles.imageWrapper}>
+<div className={styles.yellowLayer}></div>
+ <Image
+    src="/home-aboutus.png"
+    alt="Children supported by KVS Trust"
+    fill
+    priority
+    className={styles.aboutImage}
+  />
+
+</div>
 </div>
 </section>
   )

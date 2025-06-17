@@ -1,0 +1,10 @@
+.yellowTopLayer {
+    position: relative;
+    height: 3rem;
+    top: 1.5rem;
+    width: 100%;
+    background-color: var(--yellow);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    z-index: -1;
+}
