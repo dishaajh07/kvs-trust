@@ -56,7 +56,15 @@ const Header = () => {
 
         {/* Desktop Buttons */}
         <div className={styles.navButtons}>
+
           <a className={styles.tele} href="tel:+918867148889">
+            <Image
+      src="/icons/call-icon.svg"
+      alt="Call Icon"
+      width={32}
+      height={32}
+      className={styles.callIcon}
+    />
             +91 8867 148 889
           </a>
           <a className={styles.donate}>Donate Now</a>

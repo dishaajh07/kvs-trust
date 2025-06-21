@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import Image from 'next/image';
 import styles from './Footer.module.css';
@@ -20,7 +21,7 @@ const Footer = () => {
 <p className={styles.text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore autem illo numquam!</p>
 
 <div className={styles.line}>
-<p className={styles.text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore autem illo numquam!</p>
+<p className={styles.copyText}>Copyright &copy; 2025 KVS Charitable Trust. All Rights Reserved.</p>
 </div>
 </footer>
 </>

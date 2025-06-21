@@ -1,0 +1,19 @@
+.donate {
+  font-size: 1.5rem;
+  color: black;
+  background-color: white;
+  padding: 1.1rem 2.5rem;
+  border-radius: 3.5rem;
+  text-decoration: none;
+  border: 2px solid var(--yellow);
+  outline: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.donate:hover {
+  color: black;
+  background-color: var(--yellow);
+  border: none;
+  outline: none;
+}

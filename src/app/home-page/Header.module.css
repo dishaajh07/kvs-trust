@@ -2,7 +2,6 @@
   width: 100%;
 }
 
-
 .nav {
   background-color: rgb(0, 0, 0);
   height: 10rem;
@@ -21,6 +20,8 @@
 }
 
 .navBar {
+    white-space: nowrap;
+  flex-wrap: nowrap;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,18 +43,31 @@
 }
 
 .navButtons {
+  white-space: nowrap;
+  flex-wrap: nowrap;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
 .tele {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.5rem;
   color: white;
   padding: 1.1rem 2.5rem;
   border-radius: 3.5rem;
   border: 2px solid white;
   text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.callIcon{
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
 }
 
 @keyframes pulse-border {
@@ -86,8 +100,9 @@
 }
 
 .donate:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: var(--blue);
+  padding: 1.5rem 2.5rem;
 }
 
 .navLink:hover {
@@ -100,16 +115,75 @@
   border-radius: 5rem;
 }
 
+/* /////////////////////////////////////////// */
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
-@media only screen and (max-width: 400px) {}
+@media (min-width: 1000px) and (max-width: 1450px) {
+.nav {
+  background-color: rgb(0, 0, 0);
+  height: 10rem;
+  padding: 1rem 2rem;
+}
 
-@media only screen and (max-width: 600px) {}
+.navBar {
+  gap: 1.5rem;
+}
 
-@media only screen and (min-width: 600px) {}
 
-@media only screen and (min-width: 768px) {}
+.navLink {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 5rem;
+}
 
-@media only screen and (min-width: 992px) {}
+.navButtons {
+  gap: 1rem;
+}
 
-@media only screen and (min-width: 1200px) {}
+.tele {
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1.1rem 2.5rem;
+  border-radius: 3.5rem;
+  border: 2px solid white;
+}
+
+.callIcon{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+.donate {
+  font-size: 1.5rem;
+  padding: 1.1rem 2.5rem;
+  border-radius: 3.5rem;
+}
+
+.donate:hover {
+  padding: 1.5rem 2.5rem;
+}
+
+.navLink:hover {
+  border-radius: 5rem;
+}
+
+.navLink:active {
+  border-radius: 5rem;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+@media (min-width: 601px) and (max-width: 767px) {
+}
+
+
+@media (min-width: 401px) and (max-width: 600px) {
+}
+
+@media (max-width: 400px) {
+}
