@@ -6,6 +6,9 @@ import Image from 'next/image';
 const AboutUs = () => {
   return (
     <section className={styles.aboutUs} aria-labelledby="about-us-heading">
+
+<div className={styles.gridContainer}>
+        {/* Left Side: Text */}
 <div className={styles.aboutUsContent}>
 <h2 id="about-title" className={styles.title}>
           About KVS Trust
@@ -19,10 +22,13 @@ const AboutUs = () => {
         >
           Learn More 
         </button>
+</div>
+
+{/* Right Side: Image */}
 <div className={styles.imageWrapper}>
 <div className={styles.yellowLayer}></div>
  <Image
-    src="/home-aboutus.png"
+    src="/hero-image.webp"
     alt="Children supported by KVS Trust"
     fill
     priority
