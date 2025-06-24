@@ -45,7 +45,7 @@ const impactData = [
                 alt={item.alt}
                 fill
                 className={styles.icon}
-              />
+              />  
               <figcaption>
                 <p className={styles.number}>{item.number}</p>
                 <p className={styles.label}>{item.label}</p>
